@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.lcarv.aoc2022.utils.Input;
+import com.lcarv.aoc2022.utils.Log;
 
 // -> each rucksack has the same nr of items in its 2 compartments
 // -> lower case letters are worth from 1 to 26 and upper case letters from 27 to 52
@@ -13,10 +14,6 @@ import com.lcarv.aoc2022.utils.Input;
 public class App {
   static int prioritiesCount = 0;
   static int prioritiesCount2 = 0;
-
-  public static void pr(Object object) {
-    System.out.println(object);
-  }
 
   public static void main(String[] args) throws FileNotFoundException {
     // Input input = new Input("src/main/java/com/lcarv/aoc2022/day03/testIpt.txt");
@@ -43,8 +40,8 @@ public class App {
       }
     }
     scanner.close();
-    pr(prioritiesCount);
-    pr(prioritiesCount2);
+    Log.ln(prioritiesCount);
+    Log.ln(prioritiesCount2);
 
   }
 
